@@ -1,6 +1,6 @@
 # マルチステージビルド
 # ビルドステージ
-FROM rust:1.76-slim AS builder
+FROM rust:1.83-slim AS builder
 
 WORKDIR /app
 
