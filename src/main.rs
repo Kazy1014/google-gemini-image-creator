@@ -13,6 +13,7 @@ use tracing::{error, info};
 async fn main() -> Result<()> {
     // ログの初期化
     tracing_subscriber::fmt()
+        .with_writer(std::io::stderr)
         .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
         .init();
 
