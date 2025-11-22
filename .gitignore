@@ -1,0 +1,48 @@
+# Rust build artifacts
+/target
+# Note: Cargo.lock is kept for binary projects
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+!env.example
+
+# API keys and credentials
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials.json
+secrets.json
+config.json
+!*.example.json
+
+# MCP client configuration files (may contain API keys)
+claude_desktop_config.json
+*_config.json
+!*example*.json
+!mcp-config*.example.json
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db

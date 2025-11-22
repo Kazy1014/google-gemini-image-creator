@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "google-gemini-image-creator": {
+      "command": "/path/to/google-gemini-image-creator/target/release/google-gemini-image-creator",
+      "env": {
+        "GEMINI_API_KEY": "your_gemini_api_key_here",
+        "GEMINI_DEFAULT_MODEL": "gemini-2.5-flash-image",
+        "GEMINI_ALLOWED_MODELS": "gemini-2.5-flash-image,gemini-3-pro-image-preview"
+      }
+    }
+  }
+}
+

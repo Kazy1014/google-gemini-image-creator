@@ -1,0 +1,39 @@
+[package]
+name = "google-gemini-image-creator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# MCP Protocol - JSON-RPC based, implemented directly
+
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Base64 encoding/decoding
+base64 = "0.22"
+
+# Time handling
+chrono = { version = "0.4", features = ["serde"] }
+
+# Async trait support
+async-trait = "0.1"
+
+[dev-dependencies]
+# Testing
+mockito = "1.0"
+tokio-test = "0.4"
